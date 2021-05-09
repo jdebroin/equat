@@ -6,7 +6,7 @@ CPPFLAGS += -g
 OBJECTS = equat.o
 LIBS = -lreadline
 
-all: /usr/local/bin/equat equat
+all: equat
 	
 equat: $(OBJECTS)
 	$(CPP) -o equat $(OBJECTS) $(LIBS)
